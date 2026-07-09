@@ -26,9 +26,9 @@ def coursesdetails(request,):
 
 def userfrom(request):
     try:
-        name = request.GET['name'] #here we are getting the value of name from the GET request and storing it in the name variable
-        email = request.GET['email'] #here we are getting the value of email from the GET request and storing it in the email variable
-        message = request.GET['message'] #here we are getting the value of message from the
+        name =str(request.GET.get('name'))#here we are getting the value of name from the GET request and storing it in the name variable
+        email = request.GET.get('email') #here we are getting the value of email from the GET request and storing it in the email variable
+        message = request.GET.get('message') #here we are getting the value of message from the GET request and storing it in the message variable
         print(f"Name: {name}, Email: {email}, Message: {message}") #here we are printing the values of name, email and message in the console
     except:
         pass #here we are using pass statement to ignore the exception if any of the above variables are not present in the GET request    
