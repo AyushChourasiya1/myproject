@@ -33,4 +33,4 @@ def userfrom(request):
         print(f"Name: {name}, Email: {email}, Message: {message}" , n) #here we are printing the values of name, email and message in the console
     except:
         pass #here we are using pass statement to ignore the exception if any of the above variables are not present in the GET request    
-    return render(request, 'userfrom.html') #here we are rendering the userform.html template which is present in the templates folder
+    return render(request, 'userfrom.html',{'name': name, 'email': email, 'message': message }) #here we are rendering the userform.html template which is present in the templates folder

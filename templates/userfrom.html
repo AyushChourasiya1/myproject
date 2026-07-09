@@ -27,11 +27,11 @@
 
 <form>
 
-<input type="text" placeholder="Your Name" name="name" required> <!-- name is must for GET method to work properly -->
+<input type="text" placeholder="Your Name" name="name" value="{{ name }}" required> <!-- name is must for GET method to work properly -->
 
-<input type="email" placeholder="Email Address" name="email" required>
+<input type="email" placeholder="Email Address" name="email" value="{{ email }}"  required>
 
-<textarea rows="6" placeholder="Your Message" name="message"></textarea>
+<textarea rows="6" placeholder="Your Message" name="message" value="{{ message }}"></textarea>
 
 <button type="submit">Send Message</button>
 
