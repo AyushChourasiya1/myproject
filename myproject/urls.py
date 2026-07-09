@@ -24,4 +24,5 @@ urlpatterns = [
     path('contact/',views.courses,name='contact'),
     path('',views.homepage,name='homepage'), #here we are passing the homepage view to the url which is present in the views.py file and we can access this view using the name 'homepage' in the template using {% url 'homepage' %} syntax
     path('coursesdetails/',views.coursesdetails,name='coursesdetails'),
+    path('userfrom/',views.userfrom,name='userfrom'),
 ]
