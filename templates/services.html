@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<nav>
+
+<h2 class="logo">EduCourse</h2>
+
+<ul>
+<li><a href="{% url 'homepage' %}">Home</a></li>
+<li><a href="{% url 'about-us' %}">About</a></li>
+<li><a href="{% url 'coursesdetails' %}" class="active">Services</a></li>
+<li><a href="{% url 'contact' %}">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="page">
+
+<h1>Our Services</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Live Classes</h3>
+<p>Interactive online classes with experts.</p>
+</div>
+
+<div class="card">
+<h3>Recorded Courses</h3>
+<p>Learn anytime from premium videos.</p>
+</div>
+
+<div class="card">
+<h3>Certificates</h3>
+<p>Industry-recognized certificates after completion.</p>
+</div>
+
+<div class="card">
+<h3>Placement Support</h3>
+<p>Resume reviews and interview preparation.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 EduCourse</p>
+</footer>
+
+</body>
+</html>

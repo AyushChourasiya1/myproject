@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduCourse</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <h2 class="logo">EduCourse</h2>
+
+        <ul> 
+            <li><a href="{% url 'homepage' %}" class="{% if request.path == '/' %}active{% endif %}">Home</a></li>
+            <li><a href="{% url 'about-us' %}" class="{% if request.path == '/about-us/' %}active{% endif %}">About us</a></li>
+            <li><a href="{% url 'coursesdetails' %}">Services</a></li>
+            <li><a href="{% url 'contact' %}" >Contact</a></li>
+        </ul>
+    </nav>  
+
+    <div class="hero">
+        <h1>Learn Skills That Build Your Future</h1>
+        <p>Join thousands of students learning programming, design and business online.</p>
+
+        <a href="{% url 'coursesdetails' %}" class="btn">Explore Courses</a>
+    </div>
+</header>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<nav>
+
+<h2 class="logo">EduCourse</h2>
+
+<ul>
+<li><a href="{% url 'homepage' %}">Home</a></li>
+<li><a href="{% url 'about-us' %}">About</a></li>
+<li><a href="{% url 'coursesdetails' %}">Services</a></li>
+<li><a href="{% url 'contact' %}" class="active">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="page">
+
+<h1>Contact Us</h1>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 EduCourse</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
