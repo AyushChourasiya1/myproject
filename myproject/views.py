@@ -25,11 +25,12 @@ def coursesdetails(request,):
     return render(request, 'services.html') #here we are passing the course_id variable to the template which is present in the templates folder and we can access this variable in the template using {{ course_id }} syntax
 
 def userfrom(request):
+    n=24
     try:
         name =str(request.GET.get('name'))#here we are getting the value of name from the GET request and storing it in the name variable
         email = request.GET.get('email') #here we are getting the value of email from the GET request and storing it in the email variable
         message = request.GET.get('message') #here we are getting the value of message from the GET request and storing it in the message variable
-        print(f"Name: {name}, Email: {email}, Message: {message}") #here we are printing the values of name, email and message in the console
+        print(f"Name: {name}, Email: {email}, Message: {message}" , n) #here we are printing the values of name, email and message in the console
     except:
         pass #here we are using pass statement to ignore the exception if any of the above variables are not present in the GET request    
     return render(request, 'userfrom.html') #here we are rendering the userform.html template which is present in the templates folder
