@@ -25,7 +25,8 @@
 
 <h1>Contact Us</h1>
 
-<form>
+<form method="post">
+    {% csrf_token %}
 
 <input type="text" placeholder="Your Name" name="name" value="{{ name }}" required> <!-- name is must for GET method to work properly -->
 
